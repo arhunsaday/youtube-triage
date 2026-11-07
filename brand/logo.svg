@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="YouTube Triage">
+  <rect width="128" height="128" rx="28.57" fill="#16161A"/>
+  <rect x="38" y="24" width="52" height="14" rx="6" fill="#ffffff" fill-opacity="0.30"/>
+  <rect x="30" y="33" width="68" height="14" rx="7" fill="#ffffff" fill-opacity="0.60"/>
+  <rect x="22" y="44" width="84" height="60" rx="12" fill="#ffffff" fill-opacity="0.93"/>
+  <circle cx="64" cy="74" r="13" fill="#F97316"/>
+</svg>
