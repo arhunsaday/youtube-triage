@@ -24,17 +24,15 @@ Open it with the toolbar button (from any tab) or the **Triage** button on
 
 ## Install
 
-```sh
-pnpm install
-pnpm build:all
-```
+Download the latest build from [`releases/`](releases/), then follow
+[docs/distribution.md](docs/distribution.md):
 
-- **Chrome, Edge, Brave, Arc**: open `chrome://extensions`, turn on developer mode,
-  _Load unpacked_, pick `dist/`.
-- **Firefox 142+**: open `about:debugging#/runtime/this-firefox`, _Load Temporary Add-on_,
-  pick `dist-firefox/manifest.json`.
+- **Firefox 142+**: drag the signed `.xpi` onto a Firefox window.
+- **Chrome, Edge, Brave, Arc**: unzip, then _Load unpacked_ in `chrome://extensions`.
 
-After a rebuild, reload the extension, then reload the YouTube tab.
+From source: `pnpm install && pnpm build:all`, then load `dist/` unpacked in Chrome or
+`dist-firefox/manifest.json` from `about:debugging#/runtime/this-firefox` in Firefox. After a
+rebuild, reload the extension, then reload the YouTube tab.
 
 ## How it works
 
@@ -52,6 +50,7 @@ pnpm dev        # Vite + CRXJS with hot reload, load dist/ unpacked
 pnpm verify     # format, typecheck, tests, Chrome + Firefox builds
 pnpm lint:firefox
 pnpm brand      # regenerate icons and brand/logo.svg
+pnpm ship patch # bump, verify, sign the Firefox XPI, refresh releases/
 ```
 
 | Path                         | Role                                                |

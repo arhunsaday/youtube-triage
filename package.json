@@ -20,6 +20,7 @@
     "format:check": "prettier --check src tests scripts vite.config.ts",
     "lint:firefox": "web-ext lint --source-dir dist-firefox",
     "brand": "node scripts/brand.mjs",
+    "ship": "node scripts/ship.mjs",
     "verify": "pnpm format:check && pnpm typecheck && pnpm test && pnpm build:all"
   },
   "dependencies": {
