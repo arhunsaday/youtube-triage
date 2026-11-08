@@ -1,0 +1,2 @@
+38533ddbc34af1e20d78929e81c36ec49f3ed44a456dd4eeb79c8dc232d4201c  youtube-triage-0.1.0-chrome.zip
+025e7d8c7622b7badd94d2fc0dca4fadb831f9b7218678487dd44c71fa13bd89  youtube-triage-0.1.0-firefox-signed.xpi
